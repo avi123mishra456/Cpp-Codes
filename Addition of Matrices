@@ -1,0 +1,83 @@
+#include <iostream>
+using namespace std;
+int main() 
+
+{
+    int length1, bredth1;
+    cout << "Enter the length of matrices : "<<endl;
+    cin>>length1;
+    cout << "Enter the bredth of matrices : "<<endl;
+    cin>>bredth1;
+    int matrix1[length1][bredth1];
+    
+    cout << "Enter the Elements for MATRIX 1 : "<<endl;
+    
+    for(int i=0;i<length1;i++)
+    {
+             for(int j=0;j<bredth1;j++)
+            {
+               cout << "Enter the value of element ["<< i << "]["<<j<<"] :"<<endl;
+               cin>>matrix1[i][j];
+            }
+    }
+    
+
+    int matrix2[length1][bredth1];
+    
+    cout << "Enter the Elements for MATRIX 2 : "<<endl;
+    
+    for(int i=0;i<length1;i++)
+    {
+             for(int j=0;j<bredth1;j++)
+            {
+               cout << "Enter the value of element ["<< i << "]["<<j<<"] :"<<endl;
+               cin>>matrix2[i][j];
+            }
+    }
+    
+    int matrix3[length1][bredth1];
+    
+    for(int i=0;i<length1;i++)
+    {
+             for(int j=0;j<bredth1;j++)
+            {
+               matrix3[i][j]=matrix1[i][j]+matrix2[i][j];
+            }
+    }
+     
+     
+    cout<<"The MATRIX 1 is :"<<endl;
+    for(int i=0;i<length1;i++)
+    {
+            for(int j=0;j<bredth1;j++)
+            {
+               cout <<matrix1[i][j]"   ";
+            }
+            cout<<endl;
+    }   
+    
+    cout<<endl;
+    
+    cout<<"The MATRIX 2 is :"<<endl;
+    for(int i=0;i<length1;i++)
+    {
+            for(int j=0;j<bredth1;j++)
+            {
+               cout <<matrix2[i][j]"   ";
+            }
+            cout<<endl;
+    }   
+    
+    cout<<endl;
+    
+    cout<<"The MATRIX 3 WHICH IS the sum of MATRIX 1 and MATRIX 2 is :"<<endl;
+    for(int i=0;i<length1;i++)
+    {
+            for(int j=0;j<bredth1;j++)
+            {
+               cout <<matrix3[i][j]<<"   ";
+            }
+            cout<<endl;
+    }   
+    
+}
